@@ -5,6 +5,10 @@ MCP tool (for AI models and valid for VScode, Roo, Cline) for auto terminal outp
 
 This project provides tools to interact with the screen in real-time, including taking screenshots and monitoring process output. It's designed to be used as an MCP server, providing tools that can be accessed and used by other applications.
 
+## Requirements
+
+*   **Node.js:** This project requires Node.js to be installed. You can download it from [https://nodejs.org/](https://nodejs.org/).
+
 ## Available Tools
 
 *   **start\_process:** Starts a background command asynchronously and returns a process ID for monitoring.
@@ -16,10 +20,11 @@ This project provides tools to interact with the screen in real-time, including 
 
 To use this project as an MCP server, you need to:
 
-1.  Install the dependencies: `npm install`
-2.  Start the server: `node index.js`
+1.  **Install Node.js:** Ensure that Node.js is installed on your system.
+2.  **Install the dependencies:** Navigate to the project directory in your terminal and run `npm install`.  **Note:** Do not include the `node_modules` folder in your repository. These dependencies will be installed when the project is set up.
+3.  **Start the server:** Run `node index.js` to start the server.
 
-To enable this MCP server, you need to add the following configuration to your `mcp_settings.json` file (typically located at `C:\Users\giova\AppData\Roaming\Code - Insiders\User\globalStorage\rooveterinaryinc.roo-cline\settings\mcp_settings.json`):
+To enable this MCP server, you need to add the following configuration to your `mcp_settings.json` file (typically located at `C:\Users\[Your Username]\AppData\Roaming\Code - Insiders\User\globalStorage\rooveterinaryinc.roo-cline\settings\mcp_settings.json`):
 
 ```json
 {
@@ -34,7 +39,7 @@ To enable this MCP server, you need to add the following configuration to your `
     "timeout": 60,
     "command": "node",
     "args": [
-      "C:\\Users\\giova\\OneDrive\\Documents\\Cline\\MCP\\vision real time screen\\build\\index.js"
+      "C:\\Users\\[Your Username]\\OneDrive\\Documents\\Cline\\MCP\\vision real time screen\\build\\index.js"
     ],
     "env": {},
     "transportType": "stdio"
