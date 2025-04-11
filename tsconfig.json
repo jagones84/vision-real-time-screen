@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    /* Base Options: */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ES2022", // Target modern Node.js versions
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitAny": true, // Recommended for type safety
+    "strictNullChecks": true, // Recommended for type safety
+
+    /* If NOT transpiling with TypeScript: */
+    // "module": "preserve", // Keep import/export syntax
+    // "noEmit": true, // Don't output JS files (if using another bundler/runner like ts-node)
+
+    /* If your code runs in the DOM: */
+    // "lib": ["es2022", "dom", "dom.iterable"],
+
+    /* If your code doesn't run in the DOM: */
+    "lib": ["es2022"],
+
+    /* Module Resolution Options */
+    "module": "NodeNext", // Use Node.js ESM-compatible module resolution
+    "moduleResolution": "NodeNext",
+    "baseUrl": ".", // Base directory for non-relative imports
+    // "paths": {}, // Optional path mapping
+
+    /* Output Structure Options */
+    "outDir": "./build", // Output directory for compiled JS
+    "rootDir": "./src", // Source directory
+
+    /* Source Map Options */
+    "sourceMap": true, // Generate source maps for debugging
+
+    /* Type Checking Options */
+    "types": ["node"] // Explicitly include Node.js types
+  },
+  "include": ["src/**/*", "declaration.d.ts"], // Include all files in the src directory
+  "exclude": ["node_modules", "build"] // Exclude node_modules and build output
+}
